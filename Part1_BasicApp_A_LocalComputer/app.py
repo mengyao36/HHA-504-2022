@@ -6,6 +6,14 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello world!'
 
+@app.route('/careers')
+def careers():
+    return 'Welcome to the career page!'
+
+@app.route('/dashboard')
+def dashboard():
+    return 'You are reaching the dashboard!'
+
 if __name__ == '__main__':
     app.run(debug=True, host='localhost', port=80)
 
